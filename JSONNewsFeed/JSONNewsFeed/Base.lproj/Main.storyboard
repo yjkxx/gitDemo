@@ -17,41 +17,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="200" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QOG-ns-Ue1">
-                                <rect key="frame" x="0.0" y="99" width="393" height="719"/>
+                                <rect key="frame" x="0.0" y="89" width="393" height="729"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newsCell" rowHeight="172" id="Yvd-fL-H17" customClass="NewsTableViewCell" customModule="JSONNewsFeed" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="172"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newsCell" rowHeight="121" id="Yvd-fL-H17" customClass="NewsTableViewCell" customModule="JSONNewsFeed" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="121"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yvd-fL-H17" id="fBF-tg-mcm">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="172"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="121"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newsTitle" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwE-Mo-Tls">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newsTitle" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwE-Mo-Tls">
                                                     <rect key="frame" x="170" y="11" width="203" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="JD9-gG-4CC"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bAR-39-aIZ">
-                                                    <rect key="frame" x="10" y="10" width="150" height="152"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bAR-39-aIZ">
+                                                    <rect key="frame" x="10" y="10" width="150" height="101"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="YTf-R4-plf"/>
                                                         <constraint firstAttribute="height" constant="100" id="gHI-aJ-LIz"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newsAuthor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L3-Mu-1uV">
-                                                    <rect key="frame" x="170" y="73" width="77" height="17"/>
+                                                    <rect key="frame" x="170" y="73" width="193" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newsSource" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0l-Aa-CJ9">
-                                                    <rect key="frame" x="170" y="92" width="79" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newsSource" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0l-Aa-CJ9">
+                                                    <rect key="frame" x="170" y="93" width="193" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newsDate" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glc-jR-6R8">
+                                                    <rect key="frame" x="291" y="94.333333333333329" width="82" height="15.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -61,17 +67,24 @@
                                                 <constraint firstItem="bAR-39-aIZ" firstAttribute="leading" secondItem="fBF-tg-mcm" secondAttribute="leading" constant="10" id="HJd-xM-hEQ"/>
                                                 <constraint firstItem="bAR-39-aIZ" firstAttribute="top" secondItem="fBF-tg-mcm" secondAttribute="top" constant="10" id="NMq-km-d35"/>
                                                 <constraint firstAttribute="bottom" secondItem="bAR-39-aIZ" secondAttribute="bottom" constant="10" id="OQz-mZ-W1V"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="glc-jR-6R8" secondAttribute="trailing" id="TCx-lF-Dpi"/>
                                                 <constraint firstItem="UwE-Mo-Tls" firstAttribute="leading" secondItem="bAR-39-aIZ" secondAttribute="trailing" constant="10" id="VMR-Cm-mbU"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="UwE-Mo-Tls" secondAttribute="trailing" id="cXT-mE-8Co"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="h0l-Aa-CJ9" secondAttribute="trailing" constant="10" id="cwV-IK-AJW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="h0l-Aa-CJ9" secondAttribute="bottom" id="foi-Az-NcQ"/>
                                                 <constraint firstItem="h0l-Aa-CJ9" firstAttribute="leading" secondItem="bAR-39-aIZ" secondAttribute="trailing" constant="10" id="hF8-8y-NJk"/>
+                                                <constraint firstItem="glc-jR-6R8" firstAttribute="leading" secondItem="bAR-39-aIZ" secondAttribute="trailing" constant="131" id="mMN-pC-3nM"/>
                                                 <constraint firstItem="UwE-Mo-Tls" firstAttribute="top" secondItem="fBF-tg-mcm" secondAttribute="topMargin" id="nFB-O2-0op"/>
-                                                <constraint firstItem="h0l-Aa-CJ9" firstAttribute="top" secondItem="0L3-Mu-1uV" secondAttribute="bottom" constant="2" id="qwN-8g-vWw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0L3-Mu-1uV" secondAttribute="trailing" constant="10" id="pFF-jY-vqU"/>
+                                                <constraint firstItem="h0l-Aa-CJ9" firstAttribute="top" secondItem="0L3-Mu-1uV" secondAttribute="bottom" constant="3" id="qwN-8g-vWw"/>
                                                 <constraint firstItem="0L3-Mu-1uV" firstAttribute="leading" secondItem="bAR-39-aIZ" secondAttribute="trailing" constant="10" id="sX3-cK-mJK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="glc-jR-6R8" secondAttribute="bottom" id="tUn-oJ-WJQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <connections>
                                             <outlet property="newsAuthor" destination="0L3-Mu-1uV" id="nbL-ER-AIW"/>
+                                            <outlet property="newsDate" destination="glc-jR-6R8" id="2Fw-4c-Ls3"/>
                                             <outlet property="newsImageView" destination="bAR-39-aIZ" id="lnS-RT-wkj"/>
                                             <outlet property="newsSource" destination="h0l-Aa-CJ9" id="3Mn-fw-fgW"/>
                                             <outlet property="newsTitle" destination="UwE-Mo-Tls" id="cxH-2A-fnP"/>
@@ -96,7 +109,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QOG-ns-Ue1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Awq-dm-7Vp"/>
+                            <constraint firstItem="QOG-ns-Ue1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Awq-dm-7Vp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QOG-ns-Ue1" secondAttribute="bottom" id="KSR-Jw-a1E"/>
                             <constraint firstItem="QOG-ns-Ue1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VSm-Bm-2PX"/>
                             <constraint firstItem="k0p-xU-JnL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VdU-jM-aap"/>
@@ -117,8 +130,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -52,11 +52,22 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell.newsAuthor.text = newsArray.articles?[indexPath.row].author ?? ""
         cell.newsSource.text = newsArray.articles?[indexPath.row].source?.name ?? ""
         cell.newsImageView.imageFrom(url: URL(string: newsArray.articles?[indexPath.row].urlToImage ?? "") ?? URL(fileURLWithPath: ""))
+        cell.newsImageView.layer.cornerRadius = 5
+        cell.newsDate.text = formatDate(date: newsArray.articles?[indexPath.row].publishedAt ?? "")
         return cell
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func formatDate(date: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        var inputDate = dateFormatter.date(from: date)
+        dateFormatter.dateFormat = "dd/MM/YYYY"
+        return dateFormatter.string(from: inputDate ?? Date())
+        
     }
 }
 
@@ -65,6 +76,8 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var newsSource: UILabel!
     @IBOutlet weak var newsAuthor: UILabel!
     @IBOutlet weak var newsImageView: UIImageView!
+    @IBOutlet weak var newsDate: UILabel!
+    
 }
 
 extension UIImageView{
